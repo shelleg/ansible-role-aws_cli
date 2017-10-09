@@ -56,8 +56,8 @@ Could be used with `shelleg.common` like so:
            common_home_dir: "/home/{{ * common_user }}"
            common_pubkey: 'asldkjaslkdja...'
          - role: shelleg.aws_cli
-           aws
-
+           aws_cli_user: "{{ common_user }}"
+           aws_cli_group: "{{ common_group }}"
 
 
 License
